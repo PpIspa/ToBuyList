@@ -1,1 +1,5 @@
-<p>list-item works!</p>
+<td>{{ item.title }}</td>
+<td>{{ item.quantity }}</td>
+<td>
+    <button (click)="deleteItem()" pButton type="button" icon="pi pi-trash" iconPos="left"></button>
+</td>

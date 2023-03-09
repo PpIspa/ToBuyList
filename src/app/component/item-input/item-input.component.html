@@ -1,6 +1,9 @@
-<form #f="ngForm" (ngSubmit)="submit(f)" novalidate>
-    title<input name="title" ngModel required #itemInput="ngModel">
-    quantity<input name="quantity" ngModel required #itemInput="ngModel">
-    <button>Submit</button>
+<form #f="ngForm" (ngSubmit)="submit(f)" ngNativeValidate>
+    <!---  title<input name="title" ngModel required #itemInput="ngModel"> -->
+    Prodotto<input type="text" pInputText ngModel name="title" required />
+    Quantità <input type="text" pInputText ngModel name="quantity" required />
 
+    <!--  quantity<input name="quantity" ngModel required #itemInput="ngModel">  -->
+    <!--  <button>Submit</button>  -->
+    <button pButton type="sumbit" label="Insert" class="p-button-raised p-button-rounded"></button>
 </form>

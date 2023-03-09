@@ -26,4 +26,8 @@ export class MainComponent {
   addItem(item: Item) {
     this.toBuyService.addItem(item);
   }
+
+  deleteItem(n: number) {
+    this.toBuyService.removeItem(n);
+  }
 }

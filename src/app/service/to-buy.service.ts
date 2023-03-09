@@ -17,6 +17,15 @@ export class ToBuyService {
 
   changeQuantity(index: number, quantity: number) {
     this.toBuy[index].quantity = quantity;
-    //TODO : check if number is 0 
+    // TODO: if quantity is 0 remove item from list
+  }
+
+  getTotalNumberOfProduct(): number {
+    let totalProduct = 0;
+    for (let i = 0; i < this.toBuy.length; i++) {
+      totalProduct += +this.toBuy[i].quantity;
+    }
+    console.log(totalProduct);
+    return totalProduct;
   }
 }

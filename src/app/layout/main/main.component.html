@@ -1,6 +1,7 @@
-<div *ngFor="let item of getItems()">{{ item.title }}: {{ item.quantity }}</div>
-
+<div *ngFor="let item of getItems()"></div> <!-- {{ item.title }}: {{ item.quantity }}</div> -->
 <!--work -->
 <!-- <app-item-input>one</app-item-input>  -->
 
 <app-item-input (onAddNewItem)="addItem($event)"></app-item-input>
+<!-- <app-list></app-list>  -->
+<app-list [items]="getItems()" (onDelete)="deleteItem($event)"></app-list>

@@ -13,4 +13,8 @@ export class HeaderComponent {
     // TODO: somma tutte le quantità dei prodotti
     return this.toBuyService.toBuy.length;
   }
+
+  getTotalProductInList(): number {
+    return this.toBuyService.getTotalNumberOfProduct();
+  }
 }

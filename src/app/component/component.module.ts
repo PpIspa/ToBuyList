@@ -4,6 +4,9 @@ import { ListComponent } from './list/list.component';
 import { ItemInputComponent } from './item-input/item-input.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { FormsModule } from '@angular/forms';
+import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
+import { TableModule } from 'primeng/table';
 
 
 
@@ -15,7 +18,10 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ButtonModule,
+    InputTextModule,
+    TableModule
   ],
   exports: [ListComponent, ListItemComponent, ItemInputComponent]
 })
