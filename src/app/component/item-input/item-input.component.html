@@ -1,0 +1,6 @@
+<form #f="ngForm" (ngSubmit)="submit(f)" novalidate>
+    title<input name="title" ngModel required #itemInput="ngModel">
+    quantity<input name="quantity" ngModel required #itemInput="ngModel">
+    <button>Submit</button>
+
+</form>
